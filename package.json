@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp clear && gulp build",
+    "watch": "gulp",
     "prod": "gulp prod"
   },
   "author": "",
