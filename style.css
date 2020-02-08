@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #042E50;
+    background: radial-gradient(#648880, #293f50);
+}
+
+section{
+    width: 50%;
+    margin: 0 auto;
+}
+
+a {
+    color: #040719;
+    text-decoration: none;
+}
+
+a:hover{
+    color: grey;
+}
+
+footer{
+    text-align: center;
+}
+

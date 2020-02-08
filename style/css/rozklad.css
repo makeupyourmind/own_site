@@ -2,7 +2,7 @@
     background-color: gray;
 }
 
-#my_table tr:nth-child(even) {
+#my_table tr {
     background-color: #f2f2f2;
 }
 
