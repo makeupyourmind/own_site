@@ -1,0 +1,22 @@
+p {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3b4cad;
+}
+
+footer {
+  text-align: center;
+}
+
+.header-table {
+  background-color: gray;
+}
+
+#my_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#my_table tr:hover {
+  background-color: #ddd;
+}

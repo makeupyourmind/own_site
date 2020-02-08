@@ -1,0 +1,26 @@
+@mixin large-text {
+    font: {
+        family:Arial;
+        size: 16px;
+        weight: bold;
+    }
+    color: #3b4cad;
+}
+
+p{ @include large-text; }
+
+footer{
+    text-align: center;
+}
+
+.header-table {
+    background-color: gray;
+}
+
+#my_table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#my_table tr:hover {
+    background-color: #ddd;
+}

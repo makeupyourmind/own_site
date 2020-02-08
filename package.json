@@ -1,0 +1,22 @@
+{
+  "name": "gulp-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp clear && gulp build",
+    "prod": "gulp prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "makeup-module": "^1.0.0"
+  }
+}
