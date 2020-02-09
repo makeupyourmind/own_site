@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp clear && gulp build",
-    "watch": "gulp",
-    "prod": "gulp prod"
+    "build": "gulp prod",
+    "watch": "gulp"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^4.0.2"
   },
