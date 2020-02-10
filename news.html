@@ -5,21 +5,60 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./normalize.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/css/header.css">
+    <script src="https://kit.fontawesome.com/fea5f01bbc.js" crossorigin="anonymous"></script>
+
     <title>Новости</title>
 </head>
 
 <body>
-    <h2>Личная страница (блог) Новиков Никита Геннадьевич</h2>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./rozklad.html">Мое расписание</a></li>
-                <li><a href="./photo.html">Фотоальбом</a></li>
-                <li><a href="./news.html">Последние новости</a></li>
+
+    <header class="head-main">
+        <nav id="nav_id" class="nav-bar">
+            <ul class="nav-links">
+                <li class="li">
+                    <a href="./index.html">
+                        <i class="fas fa-home home">
+                        </i>
+                    </a>
+                </li>
+                <li class="li active">
+                    <a class="href" href="./news.html">Новости</a>
+                </li>
+                <li class="li">
+                    <a class="href" href="./photo.html">Фото</a>
+                </li>
+                <li class="li">
+                    <a class="href" href="./rozklad.html">Расписание</a>
+                </li>
+                <li class="li">
+                    <a class="href" href="./index1.html">Приветствие</a>
+                </li>
             </ul>
         </nav>
+        <div class="icons">
+            <div class="icon-set">
+                <a class="href" target="_blank" href="https://www.facebook.com/nikita.novikov.568294">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="icon-set">
+                <a class="href" target="_blank" href="https://www.twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="icon-set">
+                <a class="href" target="_blank" href="https://www.google.com">
+                    <i class="fab fa-google-plus-square"></i>
+                </a>
+            </div>
+        </div>
     </header>
+
+    <h2 class="h2">Личная страница (блог) Новиков Никита Геннадьевич</h2>
+
     <section>
         <h1>Последние новости</h1>
         <article>
@@ -97,9 +136,51 @@
             </p>
         </article>
     </section>
+
+    <div class="button">
+        <button class="top-button" onclick="topFunction()" id="top_button" title="Go to top">
+            <i class="fas fa-chevron-up top-icon"></i>
+        </button>
+    </div>
+
     <footer>
         <p>Copyright 2020 Мой блог</p>
     </footer>
+
+    <script>
+
+        const mybutton = document.getElementById("top_button");
+        mybutton.style.display = 'none'
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+    </script>
+
+    <script>
+
+        const header = document.getElementById("nav_id");
+        const lies = document.querySelectorAll('.nav-links > li');
+        for (let li of lies) {
+            li.addEventListener("click", function () {
+                const current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+
 </body>
 
 </html>
