@@ -1,4 +1,6 @@
 const { task, src, dest, watch, series, parallel } = require('gulp');
+const less = require('gulp-less');
+const stylus = require('gulp-stylus');
 const sass = require('gulp-sass');
 const jade = require('gulp-jade');
 const htmlmin = require('gulp-htmlmin');
@@ -7,6 +9,20 @@ const del = require('del');
 task('clear', async function (done) {
     return await del('build')
 })
+
+task('stylus', function () {
+    return src('src/stylus/**/*.styl')
+        .pipe(stylus({
+            compress: true
+        }))
+        .pipe(dest('src/css'));
+});
+
+task('less', function () {
+    return src('src/less/**/*.less')
+        .pipe(less())
+        .pipe(dest('src/css'));
+});
 
 task('templates', function () {
     return src(['src/templates/**/*.jade'])
@@ -36,6 +52,14 @@ task('sass', function () { // Создаем таск "sass"
 
 task('watch', function () {
     watch(['src/sass/**/*.sass', 'src/sass/**/*.scss'], series('sass')); // Наблюдение за sass файлами в папке sass
+});
+
+task('less-watch', function () {
+    watch(['src/less/**/*.less', 'src/less/**/*.less'], series('less')); // Наблюдение за less файлами в папке less
+});
+
+task('stylus-watch', function () {
+    watch(['src/stylus/**/*.styl', 'src/stylus/**/*.styl'], series('stylus')); // Наблюдение за less файлами в папке less
 });
 
 task('default', parallel('watch'));

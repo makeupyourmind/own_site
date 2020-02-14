@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp prod",
-    "watch": "gulp"
+    "watch": "gulp",
+    "less": "gulp less",
+    "less-watch": "gulp less-watch",
+    "stylus": "gulp stylus",
+    "watch-stylus-t": "stylus --watch src/stylus/main.styl --out src/css --compress",
+    "watch-stylus": "gulp stylus-watch"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +19,11 @@
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-jade": "^1.1.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-less": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylus": "^2.7.0",
+    "less": "^3.11.1",
+    "stylus": "^0.54.7"
   },
   "dependencies": {
     "del": "^5.1.0",

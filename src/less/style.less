@@ -1,0 +1,31 @@
+@import "./another.less";
+
+@base-color: #111;
+@header-font: Arial;
+.concrete {
+    font-family:@header-font;
+    font-weight: 800;
+    color: @base-color * 4;
+}
+
+.concrete_border_top {
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+
+.submitBtn {
+    .concrete_border_top;
+}
+
+section {
+    h1 {
+        font-size: 30px;
+    }
+}
