@@ -1,0 +1,21 @@
+@media print {
+
+   .head-main, .footer{
+       display: none !important;
+   }
+
+   *, html{
+       color: initial !important;
+       margin: 50px;
+       font-family: 'Times New Roman', Times, serif !important;
+   }
+
+   .image{
+       display: none;
+   }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+  }
