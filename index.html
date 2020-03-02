@@ -3,6 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./normalize.css">
 
@@ -17,13 +19,15 @@
     <header class="head-main">
         <nav id="nav_id" class="nav-bar">
             <ul class="nav-links">
-                <li class="li active">
+                <i style="display: none;" id="toggle-nav-open" class="fas fa-chevron-circle-right open-nav"></i>
+                <i style="display: none;" id="toggle-nav-close" class="fas fa-chevron-circle-left close-nav"></i>
+                <li class="li">
                     <a href="./index.html">
                         <i class="fas fa-home home">
                         </i>
                     </a>
                 </li>
-                <li class="li">
+                <li class="li active">
                     <a class="href" href="./news.html">Новости</a>
                 </li>
                 <li class="li">
@@ -91,6 +95,39 @@
     <footer>
         <p>Copyright 2020 Мой блог </p>
     </footer>
+
+    <script>
+        document
+            .getElementById('toggle-nav-open')
+            .addEventListener('click', function () {
+                document.querySelector('.head-main').style.left = "0px"
+                document.querySelector('.head-main').style.transition = "left 0.5s"
+                document.getElementById('toggle-nav-open').style.cssText = "display:none !important"
+
+                document.getElementById('toggle-nav-close').style.display = "block"
+            })
+
+        document
+            .getElementById('toggle-nav-close')
+            .addEventListener('click', function () {
+                document.querySelector('.head-main').style.left = "-110px"
+                document.querySelector('.head-main').style.transition = "left 0.5s"
+                document.getElementById('toggle-nav-close').style.display = "none"
+
+                document.getElementById('toggle-nav-open').style.display = "block"
+
+            })
+
+        document.body.addEventListener('click', function () {
+            if (window.getComputedStyle(document.querySelector('.head-main')).left == "0px") {
+                document.querySelector('.head-main').style.left = "-110px"
+                document.querySelector('.head-main').style.transition = "left 0.5s"
+                document.getElementById('toggle-nav-close').style.display = "none"
+
+                document.getElementById('toggle-nav-open').style.display = "block"
+            }
+        }); 
+    </script>
 
     <script>
 
