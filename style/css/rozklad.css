@@ -2,6 +2,10 @@
     background-color: gray;
 }
 
+#my_table{
+    text-align: center;
+}
+
 #my_table tr {
     background-color: #f2f2f2;
 }

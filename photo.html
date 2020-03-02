@@ -3,6 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./normalize.css">
 
@@ -18,16 +20,18 @@
     <header class="head-main">
         <nav id="nav_id" class="nav-bar">
             <ul class="nav-links">
+                <i style="display: none;" id="toggle-nav-open" class="fas fa-chevron-circle-right open-nav"></i>
+                <i style="display: none;" id="toggle-nav-close" class="fas fa-chevron-circle-left close-nav"></i>
                 <li class="li">
                     <a href="./index.html">
                         <i class="fas fa-home home">
                         </i>
                     </a>
                 </li>
-                <li class="li">
+                <li class="li active">
                     <a class="href" href="./news.html">Новости</a>
                 </li>
-                <li class="li active">
+                <li class="li">
                     <a class="href" href="./photo.html">Фото</a>
                 </li>
                 <li class="li">
@@ -59,63 +63,63 @@
 
     <h2 class="h2">Личная страница (блог) Новиков Никита Геннадьевич</h2>
 
-    <section>
-        <h1>Фотоальбом</h1>
-        <article>
-            <img width="400" height="255"
+    <section class="content">
+        <h1 class="title">Фотоальбом</h1>
+        <article class="content-item">
+            <img class="image" width="400" height="255"
                 src="https://cdn.segodnya.ua/i/image_630x354/media/image/5e2/430/5d2/5e24305d22db8.jpg" alt="">
             <br>
-            <a href="./images/5e24305d22db8.jpg">Оригинал</a>
-            <p>Конор Магрегор на ufc 246</p>
-            <p>Размер оригинала 630x354</p>
+            <a class="content-p" href="./images/5e24305d22db8.jpg">Оригинал</a>
+            <p class="content-p">Конор Магрегор на ufc 246</p>
+            <p class="content-p">Размер оригинала 630x354</p>
         </article>
 
-        <article>
-            <img width="400" height="255" src="./images/встреча_с_другом.jpg" alt="">
+        <article class="content-item">
+            <img class="image" width="400" height="255" src="./images/встреча_с_другом.jpg" alt="">
             <br>
-            <a href="./images/встреча_с_другом.jpg">Оригинал</a>
-            <p>Конор Магрегор с другом</p>
-            <p>Размер оригинала 1080x810</p>
+            <a class="content-p" href="./images/встреча_с_другом.jpg">Оригинал</a>
+            <p class="content-p">Конор Магрегор с другом</p>
+            <p class="content-p">Размер оригинала 1080x810</p>
         </article>
 
-        <article>
-            <img width="400" height="255" src="./images/подготовка_к_сборам.jpg" alt="">
+        <article class="content-item">
+            <img class="image" width="400" height="255" src="./images/подготовка_к_сборам.jpg" alt="">
             <br>
-            <a href="./images/подготовка_к_сборам.jpg">Оригинал</a>
-            <p>Подготовка к сборам</p>
-            <p>Размер оригинала 1080x1349</p>
+            <a class="content-p" href="./images/подготовка_к_сборам.jpg">Оригинал</a>
+            <p class="content-p">Подготовка к сборам</p>
+            <p class="content-p">Размер оригинала 1080x1349</p>
         </article>
 
-        <article>
-            <img width="400" height="255" src="./images/подготовка_к_турниру.jpg" alt="">
+        <article class="content-item">
+            <img class="image" width="400" height="255" src="./images/подготовка_к_турниру.jpg" alt="">
             <br>
-            <a href="./images/подготовка_к_турниру.jpg">Оригинал</a>
-            <p>Подготовка к турниру</p>
-            <p>Размер оригинала 1080x720</p>
+            <a class="content-p" href="./images/подготовка_к_турниру.jpg">Оригинал</a>
+            <p class="content-p">Подготовка к турниру</p>
+            <p class="content-p">Размер оригинала 1080x720</p>
         </article>
 
-        <article>
-            <img width="400" height="255" src="./images/катание_на_велосипедах.jpg" alt="">
+        <article class="content-item">
+            <img class="image" width="400" height="255" src="./images/катание_на_велосипедах.jpg" alt="">
             <br>
-            <a href="./images/катание_на_велосипедах.jpg">Оригинал</a>
-            <p>Катание на велосипедах</p>
-            <p>Размер оригинала 1080x1080</p>
+            <a class="content-p" href="./images/катание_на_велосипедах.jpg">Оригинал</a>
+            <p class="content-p">Катание на велосипедах</p>
+            <p class="content-p">Размер оригинала 1080x1080</p>
         </article>
 
-        <article>
-            <img width="400" height="255" src="./images/поход_в_театр.jpg" alt="">
+        <article class="content-item">
+            <img class="image" width="400" height="255" src="./images/поход_в_театр.jpg" alt="">
             <br>
-            <a href="./images/поход_в_театр.jpg">Оригинал</a>
-            <p>Поход в театр с семьей</p>
-            <p>Размер оригинала 1080x1080</p>
+            <a class="content-p" href="./images/поход_в_театр.jpg">Оригинал</a>
+            <p class="content-p">Поход в театр с семьей</p>
+            <p class="content-p">Размер оригинала 1080x1080</p>
         </article>
 
-        <article>
-            <img width="400" height="255" src="./images/спарринг.jpg" alt="">
+        <article class="content-item">
+            <img class="image" width="400" height="255" src="./images/спарринг.jpg" alt="">
             <br>
-            <a href="./images/спарринг.jpg">Оригинал</a>
-            <p>Команда Конора</p>
-            <p>Размер оригинала 1080x720</p>
+            <a class="content-p" href="./images/спарринг.jpg">Оригинал</a>
+            <p class="content-p">Команда Конора</p>
+            <p class="content-p">Размер оригинала 1080x720</p>
         </article>
     </section>
 
@@ -129,6 +133,37 @@
         <p>Copyright 2020 Мой блог</p>
     </footer>
 
+    <script>
+        document
+            .getElementById('toggle-nav-open')
+            .addEventListener('click', function () {
+                document.querySelector('.head-main').style.left = "0px"
+                document.querySelector('.head-main').style.transition = "left 0.5s"
+                document.getElementById('toggle-nav-open').style.cssText = "display:none !important"
+
+                document.getElementById('toggle-nav-close').style.display = "block"
+            })
+
+        document
+            .getElementById('toggle-nav-close')
+            .addEventListener('click', function () {
+                document.querySelector('.head-main').style.left = "-110px"
+                document.querySelector('.head-main').style.transition = "left 0.5s"
+                document.getElementById('toggle-nav-close').style.display = "none"
+
+                document.getElementById('toggle-nav-open').style.display = "block"
+
+            })
+        document.body.addEventListener('click', function () {
+            if (window.getComputedStyle(document.querySelector('.head-main')).left == "0px") {
+                document.querySelector('.head-main').style.left = "-110px"
+                document.querySelector('.head-main').style.transition = "left 0.5s"
+                document.getElementById('toggle-nav-close').style.display = "none"
+
+                document.getElementById('toggle-nav-open').style.display = "block"
+            }
+        }); 
+    </script>
 
     <script>
 

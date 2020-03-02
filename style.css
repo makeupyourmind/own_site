@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+@import "./responsive.css" screen;
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -33,4 +34,12 @@ footer{
 
 .first-page{
     margin-top: 10px;
+}
+
+.content-description{
+    padding-top: 5px;
+}
+
+.content-item{
+    margin-top: 15px;
 }
