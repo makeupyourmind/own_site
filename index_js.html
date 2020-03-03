@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slider.css">
+    <script src="https://kit.fontawesome.com/fea5f01bbc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jquery-->
+    <title>My slider</title>
+</head>
+
+<body>
+
+    <div class="frame">
+        <div class="container">
+            <ul id="ul-slider" class="slider-wrapper">
+                <li class="slider-item">
+                    <img class="img-item" width="120" height="120" src="./photo_first.jpg" alt="">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" width="120" height="120" src="./photo.jpg" alt="">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" width="120" height="120" src="./photo.jpg" alt="">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" width="120" height="120" src="./photo.jpg" alt="">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" width="120" height="120" src="./photo.jpg" alt="">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" width="120" height="120" src="./photo_last.jpg" alt="">
+                </li>
+            </ul>
+
+            <div class="slider-nav">
+                <button id="button-left" class="left">
+                    <i id="left-slide" class="fas fa-chevron-left"></i>
+                </button>
+                <button id="button-right" class="right">
+                    <i id="right-slide" class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="properties">
+                <select class="select-properties" onchange="onChangeSelectCountElements()" type="number" name=""
+                    id="my_select_count_elements">
+                    <option value="" selected disabled hidden>Quantity el</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <select class="select-properties" onchange="onChangeSelectSpeedAnimation()" type="number" name=""
+                    id="my_select_speed_animation">
+                    <option value="" selected disabled hidden>Speed animation</option>
+                    <option value="1">0.5</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                </select>
+
+                <select class="select-properties" onchange="onChangeSelectCountImagesInContainer()" type="number"
+                    name="" id="my_select_count_images_in_container">
+                    <option value="" selected disabled hidden>Count images in container</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <script src="slider_js.js"></script> -->
+    <script src="slider_jquery.js"></script>
+</body>
+
+</html>
